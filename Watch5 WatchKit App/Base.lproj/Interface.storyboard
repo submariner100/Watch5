@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch5_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="Wrn-st-RWv">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="e8w-Sc-fxy">
+                                    <color key="backgroundColor" red="0.32861328125" green="0.41685655381944442" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="tlButtonTapped" destination="AgC-eL-Hgc" id="UpV-Z1-GYd"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="zLx-6c-ypD">
+                                    <color key="backgroundColor" red="0.32861328125" green="0.41685655381944442" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="trButtonTapped" destination="AgC-eL-Hgc" id="NJr-Fk-0Oz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="JzA-99-85G">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="ypd-k6-NJe">
+                                    <color key="backgroundColor" red="0.32861328125" green="0.41685655381944442" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="blButtonTapped" destination="AgC-eL-Hgc" id="vFN-3W-z5R"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="oBx-ox-HnF">
+                                    <color key="backgroundColor" red="0.32861328125" green="0.41685655381944442" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="brButtonTapped" destination="AgC-eL-Hgc" id="9VZ-Ng-qvx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="XOk-Mt-l30">
+                        <items>
+                            <menuItem title="Restart" icon="resume" id="mpl-Be-15t">
+                                <connections>
+                                    <action selector="startNewGame" destination="AgC-eL-Hgc" id="8Nt-KA-5Du"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="blButton" destination="ypd-k6-NJe" id="zkq-jW-01L"/>
+                        <outlet property="brButton" destination="oBx-ox-HnF" id="W0D-zF-Whl"/>
+                        <outlet property="tlButton" destination="e8w-Sc-fxy" id="d02-k7-jno"/>
+                        <outlet property="trButton" destination="zLx-6c-ypD" id="0bF-oA-A1X"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
